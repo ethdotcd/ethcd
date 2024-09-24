@@ -1,46 +1,54 @@
 # eth.cd
 
-![](./public/logo-ethdotcd.png)
+**eth.cd** is an open-source data aggregator for .eth profiles. It is a fork of Web3.bio but with a unique focus on projecting ENS (Ethereum Name Service) profiles. eth.cd allows users to explore on-chain data linked to any .eth name, offering a comprehensive view of the identity and activities associated with these ENS domains.
 
-eth.cd is a platform for ENS domain based Web3 and Web 2.0 Identity Graph search and link in bio profiles. It provides a list of relevant identities when searching for a Twitter handle, Ethereum address, ENS domain, Lens profile, Farcaster account.
+## What Does eth.cd Do?
 
-We're gradually making updates to eth.cd. You may expect new features and data sources.
+When you search for a .eth name (e.g., nick.eth) on eth.cd, it retrieves and displays all on-chain and publicly verifiable data linked to that .eth name. This includes:
 
-## What are the data sources?
+* **ENS Records:** Displays all the information available in the ENS records of the .eth name.
+* **POAPs Owned:** Shows the Proof of Attendance Protocol badges owned by the .eth address.
+* **NFTs Owned:** Lists all the NFTs associated with the .eth name.
+* **Guild Memberships:** Displays the guilds the .eth name is a part of.
+* **Transaction History:** Shows the transaction activities of the .eth name.
+* **Farcaster Activity:** Displays posts and activities from Farcaster linked to the .eth profile.
+* **Mirror Posts:** Shows the blog posts or content published on Mirror by the .eth address.
 
-eth.cd is powered by [Next.ID](https://next.id) Relation Service. The Relation Service is an aggregator and query service of Web2 and Web3 identities. Next.ID is indexing all identity data from public verifiable connections and on-chain records.
+Additionally, eth.cd allows users to directly tip any .eth name. The tips are sent directly to the Ethereum address attached to the ENS profile.
 
-The supported identity platforms:
-- Ethereum Name Service (ENS)
-- Ethereum
-- Farcaster
-- Lens
-- Twitter
-- Keybase
-- Reddit
-- GitHub
+## Easy Access in the Browser
 
-The queries can be found here `utils/queries.js`. You can read [the Next.ID docs](https://docs.next.id/?utm_source=web3bio) to learn more.
+Accessing .eth names in eth.cd is simple. Just append .cd to the ENS name in your browser, and it will directly load the eth.cd profile. For example, if the ENS name is nick.eth, you can enter nick.eth.cd in your browser, and the eth.cd profile of that ENS name will be displayed.
 
-## Can I remove my data?
+## Future Plans
 
-Not yet. Next.ID is indexing identity data from public verifiable connections and on-chain records. Revalidating data support is on the roadmap.
+We are constantly working to enhance the eth.cd platform. Our upcoming features include:
 
-## Mobile App?
+* **XMTP Protocol Integration:** This will enable direct messaging between .eth profiles, allowing users to communicate securely on the platform.
+* **Ethereum Follow Protocol (EFP):** This feature will enable users to follow each other, creating a social layer on top of ENS profiles.
 
-You can access eth.cd on a mobile browser. However, a desktop browser currently provides the most optimized user experience, especially for visualizing Identity Graph.
+These features will further enrich the user experience, turning eth.cd into a dynamic, interactive platform for the ENS community.
 
-## Local Dev
+## Local Development
 
-Run the development server:
+To run the development server locally, use the following commands:
 
 ```bash
 npm i && npm run dev
-```
-```bash
+# or
 yarn && yarn dev
 ```
 
 ## Contributing
 
-Feel free to submit a pull request to propose bug fixes and improvements. Help is always appreciated. You may give feature feedbacks or bug report to [eth.cd Twitter](https://twitter.com/ethdotcd) as well. 
+We welcome contributions! Feel free to submit a pull request with bug fixes, improvements, or new features. Your feedback is valuable, and you can report bugs or suggest new features on the project's GitHub page or via our social media channels.
+
+## Data Privacy
+
+Currently, data removal is not supported. eth.cd indexes data from publicly verifiable on-chain records and connections, making it a reliable source of decentralized identity information. Revalidation of data is on our roadmap.
+
+## Mobile App
+
+eth.cd can be accessed on both mobile and desktop browsers. However, a desktop browser provides the most optimized experience, especially when exploring detailed on-chain activity and identity data.
+
+For more information, feel free to explore the source code, contribute to the project, or connect with us through our community channels.
