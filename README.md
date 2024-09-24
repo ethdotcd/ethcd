@@ -1,6 +1,6 @@
 # eth.cd
 
-**eth.cd** is an open-source data aggregator for .eth profiles. It is a fork of Web3.bio but with a unique focus on projecting ENS (Ethereum Name Service) profiles. eth.cd allows users to explore on-chain data linked to any .eth name, offering a comprehensive view of the identity and activities associated with these ENS domains.
+**eth.cd** is an open-source data aggregator for .eth profiles. It is a fork of [web3.bio](https://web3.bio) [github](https://github.com/web3bio/web3bio) but with a unique focus on projecting ENS (Ethereum Name Service) profiles. eth.cd allows users to explore on-chain data linked to any .eth name, offering a comprehensive view of the identity and activities associated with these ENS domains.
 
 ## What Does eth.cd Do?
 
